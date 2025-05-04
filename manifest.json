@@ -1,0 +1,71 @@
+{
+  "manifest_version": 3,
+  "name": "Twibbon NC",
+  "version": "0.1.0",
+  "description": "Twibbon Pengumuman Kehendak Nikah SimkahWeb Gen. 4",
+  "icons": {
+    "16": "icons/icon_16.png",
+    "32": "icons/icon_32.png",
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
+  },
+  "action": {
+    "default_title": "Click to open panel"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  },
+
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "scripting",
+    "sidePanel",
+    "contextMenus",
+    "activeTab",
+    "tabs",
+    "idle",
+	"nativeMessaging"
+  ],
+  "host_permissions": ["https://simkah4.kemenag.go.id/*","https://*.facebook.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "contentScript.js",
+        "js/jquery.min.js",
+        "js/bootstrap.bundle.min.js",
+        "js/moment.min.js",
+        "js/jquery.dataTables.min.js",
+        "js/datetime-moment.js",
+        "/js/bootstrap-datepicker.js",
+        "js/bootstrap-datetimepicker.min.js",
+        "/js/fabric.min.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_end",
+      "match_about_blank": true
+    }
+  ],
+  "sandbox": {
+    "pages": [
+      "sandbox.html"
+    ]
+  },
+  "content_security_policy": {
+		"extension_pages": "script-src-elem 'self' ; script-src 'self'; object-src 'self'; frame-src 'self'; child-src 'self';"
+ }
+}

@@ -1,0 +1,47 @@
+[
+	{
+		"caption": "Template NC 01",
+		"name": "template_nc_01",
+		"background": "templatenc.png",
+		"type": 0,
+		"bingkai": "",
+		"img1_x":270,
+		"img1_y":385,
+		"img2_x":605,
+		"img2_y":385
+	},
+    {
+        "caption": "Template NC 02",
+		"name": "template_nc_02",
+        "background": "templatenc1.png",
+        "type": 0,
+        "bingkai": "",
+        "img1_x":270,
+		"img1_y":385,
+		"img2_x":605,
+        "img2_y":385
+        
+    },
+	{
+        "caption": "Template NC 03",
+		"name": "template_nc_03",
+        "background": "templatenc2.png",
+        "type": 0,
+		"bingkai": "",
+        "img1_x":270,
+		"img1_y":385,
+		"img2_x":605,
+        "img2_y":385
+    },
+	{
+        "caption": "Template NC 04",
+		"name": "template_nc_04",
+        "background": "templatenc3.png",
+        "type": 1,
+		"bingkai": "bingkai.png",
+        "img1_x":300,
+		"img1_y":385,
+		"bingkai_x":190,
+        "bingkai_y":318
+    }
+]
