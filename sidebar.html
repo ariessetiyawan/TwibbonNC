@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="module" src="http://localhost:5173/@vite/client"></script>
+
     <title>Twibbon Pengumuman Kehendak Nikah</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="module" crossorigin src="/sidebar.js"></script>
   </head>
   <body class="p-2">
     <div class="card mb-2">
@@ -10,13 +13,7 @@
         <h6 class="title" id="name">Akun Facebook</h6>
       </div>
       <div class="card-body">
-        <input
-          class="form-control"
-          type="text"
-          value=""
-          id="txtakunfb"
-          placeholder="isi url akun FB anda"
-        />
+        <input class="form-control" type="text" value="" id="txtakunfb" placeholder="isi url akun FB anda">
       </div>
     </div>
     <div class="card mb-2">
@@ -24,13 +21,7 @@
         <h6 class="title" id="name">Format Text</h6>
       </div>
       <div class="card-body">
-        <textarea
-          id="txtTmplTW"
-          cols="4"
-          rows="10"
-          style="width: 100%"
-          placeholder="Isi format text untuk data catin"
-        ></textarea>
+        <textarea id="txtTmplTW" cols="4" rows="10" style="width: 100%" placeholder="Isi format text untuk data catin"></textarea>
       </div>
     </div>
     <div class="card mb-2">
@@ -42,12 +33,12 @@
       </div>
     </div>
     <div class="card mb-2 d-none card_img">
-		<img src="" id="img_preview"/>
+		<img src="" id="img_preview">
 	</div>
 	<button type="button" class="btn btn-primary float-right ml-1" id="btn_preview">Preview</button>
 	<button type="button" class="btn btn-secondary float-right ml-1" id="btn_create">Buat Template</button>
 	<div class="fixed-bottom">
-		<p class="text-center" id="row-bttm" ></p>
+		<p class="text-center" id="row-bttm"></p>
 	</div>
 	<div id="loader"></div>
 	

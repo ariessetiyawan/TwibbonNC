@@ -1,4 +1,8 @@
 <html>
+<script type="module" crossorigin src="/sandbox.js"></script>
+
+<script type="module" src="http://localhost:5173/@vite/client"></script>
+
     <script>
         window.addEventListener('message', async function (event) {
             event.source.window.postMessage(eval(event.data), event.origin);
